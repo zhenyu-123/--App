@@ -9,7 +9,9 @@
         <span>搜索目的地</span>
       </div>
       <div class="header-right">
+        <router-link to="city">  
         北京<i class="iconfont icon-lower-triangle"></i>
+         </router-link>
       </div>
     </div>
   </div>
@@ -57,6 +59,8 @@ export default {
   .header-right 
       padding: 0 .2rem;
       font-size: .28rem;
-  
+  .header-right a
+      color:#fff;
+   
 
 </style>

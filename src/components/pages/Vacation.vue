@@ -15,22 +15,10 @@
 </template>
 <script>
 export default {
+   props: ["vacationlist"],
   data() {
     return {
-        vacationlist:[
-            {
-                id:"01",
-                title:"北京清凉避暑胜地",
-                description:"到大自然中享受“天然空调”的清凉",
-                src:require("@/assets/img/vacation.jpg")
-            },
-                       {
-                id:"02",
-                title:"北京清凉避暑胜地",
-                description:"到大自然中享受“天然空调”的清凉",
-                src:require("@/assets/img/vacation.jpg")
-            }
-        ]
+       
     };
   }
 };

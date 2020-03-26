@@ -7,10 +7,10 @@
         <img src="@/assets/img/hot.png" alt />猜你喜欢
       </div>
       <!-- 列表 -->
-      <ul class="like-box border-bottom" v-for="item in likelist" :key="item.id">
+      <ul   class="like-box border-bottom" v-for="item in likelist" :key="item.id">
         <li class="like-item">
           <div class="like-left">
-            <img :src='item.src' alt />
+            <img v-lazy='item.src'  alt />
           </div>
           <div class="like-right">
             <p class="p1">{{item.title}}</p>
@@ -27,26 +27,27 @@
 </template>
 <script>
 export default {
+  // props:['likelist'],
     data(){
         return{
-            likelist:[
-                {
-                    id:"01",
-                    src:require("@/assets/img/like.jpg"),
-                    title:"金海湖风景区",
-                    common:'1314条评论',
-                    price:"14",
-                    rigon:"平谷区"
-                },
-                        {
-                    id:"02",
-                    src:require("@/assets/img/like.jpg"),
-                    title:"金海湖风景区",
-                    common:'1314条评论',
-                    price:"14",
-                    rigon:"平谷区"
-                }
-            ]
+                 "likelist": [
+            {
+                "id": "01",
+                "src": require("@/assets/img/like.jpg"),
+                "title": "金海湖风景区",
+                "common": "1314条评论",
+                "price": "14",
+                "rigon": "平谷区"
+            },
+            {
+                "id": "02",
+                "src": require("@/assets/img/like.jpg"),
+                "title": "金海湖风景区",
+                "common": "1314条评论",
+                "price": "14",
+                "rigon": "平谷区"
+            }
+        ]
         }
     }
 };

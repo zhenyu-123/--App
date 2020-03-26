@@ -16,56 +16,9 @@
 
  
 export default {
+  props:['iconlist'],
   data() {
     return {
-      iconlist: [
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        {
-          title: "景点门票",
-          src: require("@/assets/img/slide1.jpg"),
-          id: "01"
-        },
-        { title: "景点门票", src: require("@/assets/img/slide1.jpg"), id: "01" }
-      ],
       swiperOptions1: {
         pagination: {
           el: ".swiper-pagination"

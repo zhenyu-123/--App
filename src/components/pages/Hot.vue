@@ -26,31 +26,10 @@
 </template>
 <script>
 export default {
+  props:['list'],
   data() {
     return {
-      list: [
-        {
-          id: "01",
-          src: require("@/assets/img/hot-item.jpg"),
-          p1: "西安-金鞭溪 6天跟团游",
-          p2:"【家庭游】升级碧桂园丨张家界国家森林公园天门山玻璃桥凤凰双飞6日丨赠魅力湘西",
-          p3: "￥2280 起"
-        },
-        {
-          id: "02",
-          src: require("@/assets/img/hot-item.jpg"),
-          p1: "西安-金鞭溪 6天跟团游",
-          p2:"【家庭游】升级碧桂园丨张家界国家森林公园天门山玻璃桥凤凰双飞6日丨赠魅力湘西",
-          p3: "￥2280 起"
-        },
-        {
-          id: "03",
-          src: require("@/assets/img/hot-item.jpg"),
-          p1: "西安-金鞭溪 6天跟团游",
-          p2:"【家庭游】升级碧桂园丨张家界国家森林公园天门山玻璃桥凤凰双飞6日丨赠魅力湘西",
-          p3: "￥2280 起"
-        }
-      ]
+
     }
   }
 };
