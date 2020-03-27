@@ -1,7 +1,7 @@
 # -App
 仿去哪儿App
 
-###项目技术 swiper、scss、stylus、vue.js、axios、vuex
+###项目技术 swiper、scss、stylus、vue.js、axios、vuex、fastclick、
 ### 起步
 * 安装fastclick包(解决浏览器300毫秒延迟)
 ```
