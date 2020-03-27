@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <picker></picker> -->
     <headers></headers>
     <swiper :banners='banners'></swiper>
     <Icons :iconlist='iconlist'></Icons>
@@ -17,6 +18,7 @@ import Location from "./pages/Location.vue";
 import Hot from "./pages/Hot.vue";
 import like from "./pages/Like.vue";
 import vacation from "./pages/Vacation.vue";
+// import picker from './demo/picker.vue'
 export default {
   data(){
     return{
@@ -50,6 +52,7 @@ export default {
     Hot,
     like,
     vacation
+    // picker
   }
 };
 </script>

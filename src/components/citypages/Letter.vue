@@ -16,6 +16,9 @@
 export default {};
 </script>
 <style lang='scss' scoped>
+.red {
+  background: red;
+}
 .letter {
   width: 100%;
   overflow: hidden;
@@ -25,7 +28,7 @@ export default {};
     width: 16.666%;
     height: 0.9rem;
     float: left;
-    font-size: .28rem;
+    font-size: 0.28rem;
   }
 }
 </style>

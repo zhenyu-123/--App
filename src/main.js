@@ -2,10 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router';
 import VueLazyload from 'vue-lazyload'
+import Vant from 'vant';
+
+Vue.use(Vant);
 //css
 // import 'u-reset';
 import './assets/css/u-reset.css'
 import './assets/css/iconfont.css'
+import 'vant/lib/index.css';
+
 //js
 import fastclick from 'fastclick'
 fastclick.attach(document.body);
