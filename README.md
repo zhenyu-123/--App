@@ -29,3 +29,29 @@ pages:{
 []
 }
 ```
+*** 代码
+```
+  computed: {
+    //列表的分页器
+    page() {
+      let pagesarry = [];
+      this.iconlist.forEach((v, i) => {
+        // i 下标 0-9
+        let indx = Math.floor(i / 8);
+        if (!pagesarry[indx]) {
+          //!0
+          pagesarry[indx] = []; //不存在，就赋值一个空数组
+        }
+        pagesarry[indx].push(v);
+      });
+      return pagesarry;
+    }
+  }
+```
+### better-scroll(多用列表滚动，弹性滚动)
+```
+let wrapper=this.$refs.wrapper;
+    console.log(wrapper);
+    new BScroll(wrapper)
+```
+
