@@ -31,16 +31,16 @@ export default {
     left:42%
 }
 .header {
-  position:relative;
+  position: fixed;
+  z-index 9;
   width: 100%;
   line-height: 0.88rem;
   font-size: 0.36rem;
   color: #fff;
-//   display: -webkit-flex;
-//   display: flex;
+ 
   background-color: #00bcd4;
 
-  // background-color:$bgColor ;
+ 
   .header-left {
     width: 0.6rem;
     height: 100%;

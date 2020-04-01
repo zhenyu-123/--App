@@ -1,19 +1,24 @@
 <template>
   <div>
     <div class="letter">
-      <div class="letter-li">A</div>
-      <div class="letter-li">A</div>
-      <div class="letter-li">A</div>
-      <div class="letter-li">A</div>
-      <div class="letter-li">A</div>
-      <div class="letter-li">A</div>
-      <div class="letter-li">A</div>
-      <div class="letter-li">A</div>
+      <div class="letter-li" v-for="(item,index) in cities[1]" :key="index">{{item}}</div>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  props: ["cities"],
+  data() {
+    return {
+    };
+  },
+  methods: {
+   
+  },
+  mounted() {
+
+  }
+};
 </script>
 <style lang='scss' scoped>
 .red {

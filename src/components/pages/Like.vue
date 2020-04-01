@@ -8,7 +8,7 @@
       </div>
       <!-- 列表 -->
       <ul   class="like-box border-bottom" v-for="item in likelist" :key="item.id">
-        <li class="like-item">
+        <li class="like-item" @click="detail(item.id)">
           <div class="like-left">
             <img v-lazy='item.src'  alt />
           </div>
@@ -49,6 +49,11 @@ export default {
             }
         ]
         }
+    },
+    methods:{
+      detail(id){
+        this.$router.push({name:'detail',query:{"id":id}})
+      }
     }
 };
 </script>

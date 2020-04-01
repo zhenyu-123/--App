@@ -1,8 +1,10 @@
 let myjson = require("./static/datahome.json");
 let mycity = require("./static/city.json");
 module.exports = {
+    publicPath: './',
     devServer: {
-        port: 8080,
+        port: 8081,
+        host: '0.0.0.0',//将 host设置为 0.0.0.0
         before(app) {
             app.get("/api/datahome", (req, res) => {
                 console.log(req)

@@ -1,10 +1,13 @@
 <template>
+<div>
   <swiper class="header-swiper" :options="swiperOptions">
     <swiper-slide v-for="(item,index) in banners" :key="index">
-      <!-- <img class="banner-img" :src="item.src" alt /> -->
+      <img class="banner-img" :src="item.src" alt />
     </swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
+    <div  class="swiper-pagination" slot="pagination"></div>
   </swiper>
+</div>
+
 </template>
 <script>
 export default {
@@ -39,5 +42,8 @@ export default {
 .header-swiper .banner-img {
   width: 100%;
   height: 2rem;
+}
+.swiper-pagination{
+  /* background: #fff; */
 }
 </style>
