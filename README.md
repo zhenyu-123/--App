@@ -57,3 +57,5 @@ let wrapper=this.$refs.wrapper;
 注意的坑：
 * 最外层的元素要用定为放大 top:.88rem(要有一点距离)
 * 在字母跳转对应页面的时候，如果没有最外层的top，会靠上
+# 预览
+https://zhenyu-123.github.io/GoApp.github.io/#/
